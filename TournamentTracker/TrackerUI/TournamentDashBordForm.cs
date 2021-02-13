@@ -14,7 +14,7 @@ namespace TrackerUI
 {
     public partial class TournamentDashBordForm : Form
     {
-       // List<TournamentModel> tournaments = GlobalConfig.Connaction.GetTournament_All();
+        List<TournamentModel> tournaments = GlobalConfig.Connaction.GetTournament_All();
         public TournamentDashBordForm()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace TrackerUI
         }
         private void WireUpLists()
         {
-           // LoadingExitTourDropDown.DataSource = tournaments;
+            LoadingExitTourDropDown.DataSource = tournaments;
             LoadingExitTourDropDown.DisplayMember = "TournamentName";
         }
 
