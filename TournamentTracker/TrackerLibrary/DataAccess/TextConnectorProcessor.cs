@@ -108,7 +108,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             // gets the people data in order to get the  to populate the teamMembers in TeamModel by id
             List<PersonModel> people = GlobalConfig.PeopleFile.FullFilePath().LoadFile().ConvetToPersonModels();
 
-            if (lines[0]!="")
+            if (lines.Count!=0)
             {
                 foreach (string Line in lines)
                 {
