@@ -9,4 +9,6 @@ in order to see the emails being sent (localy)
 
 please download and install PAPERCUT SMTP Papercut.Setup.exe
  from https://github.com/ChangemakerStudios/Papercut-SMTP/releases
+ 
+ make sure to run it to see the emails
 
