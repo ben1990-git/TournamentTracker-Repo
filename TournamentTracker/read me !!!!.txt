@@ -5,7 +5,7 @@ in order to use the sql db
 
 connectionString="Server= your connaction\SQLEXPRESS; Database=Tournaments; Trusted_Connection=True;"
 
-3. in the program.cs file change the DatabaseType to Sql:
+3. go to TrcackerUI/Program.cs file, change the DatabaseType to Sql:
 
 TrackerLibrary.GlobalConfig.InitializeConnaction(TrackerLibrary.DatabaseType.Sql);
 
@@ -17,7 +17,7 @@ in order to use textfile db
 
 value="(full path directory)"
 
-3. in the program.cs file change the DatabaseType to TextFile:
+3. go to TrcackerUI/Program.cs file change the DatabaseType to TextFile:
 
 TrackerLibrary.GlobalConfig.InitializeConnaction(TrackerLibrary.DatabaseType.TextFile);
 
