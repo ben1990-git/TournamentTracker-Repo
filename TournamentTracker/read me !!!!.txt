@@ -1,0 +1,28 @@
+in order to use the sql db 
+ 
+1. create a new db in your local microsoft sql server named "Tournaments" and run the script file attached to the project.
+2. change the connaction string in the app.config file to your local database connaction:
+
+connectionString="Server= your connaction\SQLEXPRESS; Database=Tournaments; Trusted_Connection=True;"
+
+3. in the program.cs file change the DatabaseType to Sql:
+
+TrackerLibrary.GlobalConfig.InitializeConnaction(TrackerLibrary.DatabaseType.Sql);
+
+4. run
+
+
+in order to use textfile db
+1. change  the key "filepath" value in app.config to the location of "TextFilesDb" folder (its inside the project):
+
+value="(full path directory)"
+
+3. in the program.cs file change the DatabaseType to TextFile:
+
+TrackerLibrary.GlobalConfig.InitializeConnaction(TrackerLibrary.DatabaseType.TextFile);
+
+3. run.
+
+
+
+
